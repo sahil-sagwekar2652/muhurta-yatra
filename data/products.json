@@ -1,0 +1,99 @@
+{
+	"products": [
+		{
+			"id": "bali-paradise",
+			"title": "Bali Paradise Adventure",
+			"description": "Experience the magical beauty of Bali with our 7-day adventure package. Visit ancient temples, explore lush rice terraces, relax on pristine beaches, and immerse yourself in the rich Balinese culture. This package includes accommodation, guided tours, and most meals.",
+			"price": 1299,
+			"duration": "7 days",
+			"image": "assets/images/bali-paradise.jpg",
+			"highlights": [
+				"Visit Ubud's famous rice terraces",
+				"Explore ancient temples and cultural sites",
+				"Relax on beautiful beaches",
+				"Traditional Balinese cooking class",
+				"Sunset at Tanah Lot temple"
+			]
+		},
+		{
+			"id": "japan-culture",
+			"title": "Japan Cultural Journey",
+			"description": "Discover the fascinating blend of ancient traditions and modern innovation in Japan. This 10-day cultural journey takes you through Tokyo's bustling streets, Kyoto's historic temples, and the serene beauty of Mount Fuji. Perfect for culture enthusiasts and first-time visitors to Japan.",
+			"price": 2499,
+			"duration": "10 days",
+			"image": "assets/images/japan-culture.jpg",
+			"highlights": [
+				"Tokyo city exploration and modern attractions",
+				"Traditional tea ceremony in Kyoto",
+				"Visit ancient temples and shrines",
+				"Bullet train experience",
+				"Mount Fuji viewing and hot springs",
+				"Authentic Japanese cuisine experiences"
+			]
+		},
+		{
+			"id": "europe-grand-tour",
+			"title": "European Grand Tour",
+			"description": "Embark on an unforgettable 14-day journey through Europe's most iconic cities. From the romantic streets of Paris to the historic canals of Venice, experience the rich culture, art, and cuisine of France, Italy, and Spain. Includes luxury accommodations and private guided tours.",
+			"price": 3899,
+			"duration": "14 days",
+			"image": "assets/images/europe-grand-tour.jpg",
+			"highlights": [
+				"Paris: Eiffel Tower and Louvre Museum",
+				"Rome: Colosseum and Vatican City",
+				"Florence: Renaissance art and architecture",
+				"Venice: Gondola rides and canals",
+				"Barcelona: Gaudi's masterpieces",
+				"Wine tasting in Tuscany"
+			]
+		},
+		{
+			"id": "thailand-tropical",
+			"title": "Thailand Tropical Escape",
+			"description": "Discover the vibrant culture and stunning landscapes of Thailand. From the bustling markets of Bangkok to the crystal-clear waters of Phuket, experience the perfect blend of adventure and relaxation. Includes island hopping, temple visits, and authentic Thai cuisine experiences.",
+			"price": 1599,
+			"duration": "8 days",
+			"image": "assets/images/thailand-tropical.jpg",
+			"highlights": [
+				"Bangkok: Floating markets and temples",
+				"Phuket: Beach relaxation and water sports",
+				"Chiang Mai: Elephant sanctuary visit",
+				"Island hopping to Phi Phi Islands",
+				"Thai cooking class",
+				"Traditional Thai massage experience"
+			]
+		},
+		{
+			"id": "iceland-northern-lights",
+			"title": "Iceland Northern Lights",
+			"description": "Witness the spectacular Northern Lights and explore Iceland's dramatic landscapes. This 6-day adventure includes glacier hiking, hot spring visits, and the chance to see the Aurora Borealis. Perfect for nature lovers and photography enthusiasts.",
+			"price": 2199,
+			"duration": "6 days",
+			"image": "assets/images/iceland-northern-lights.jpg",
+			"highlights": [
+				"Northern Lights viewing experience",
+				"Blue Lagoon hot spring visit",
+				"Glacier hiking and ice cave exploration",
+				"Golden Circle tour",
+				"Waterfall photography sessions",
+				"Icelandic cuisine tasting"
+			]
+		},
+		{
+			"id": "australia-outback",
+			"title": "Australia Outback Adventure",
+			"description": "Experience the vast beauty of Australia from the Great Barrier Reef to the Red Centre. This 12-day journey combines coastal adventures with outback exploration, including snorkeling, hiking, and cultural experiences with Aboriginal communities.",
+			"price": 2999,
+			"duration": "12 days",
+			"image": "assets/images/australia-outback.jpg",
+			"highlights": [
+				"Great Barrier Reef snorkeling",
+				"Sydney Opera House and Harbour Bridge",
+				"Uluru (Ayers Rock) sunrise viewing",
+				"Kangaroo Island wildlife encounter",
+				"Melbourne food and wine tour",
+				"Aboriginal cultural experiences"
+			]
+		}
+	]
+}
