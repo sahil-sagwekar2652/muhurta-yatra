@@ -1,0 +1,26 @@
+{
+  "name": "muhurta-yatra-website",
+  "version": "1.0.0",
+  "description": "Modern travel agency website for Muhurta Yatra - Handcrafted journeys across India",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 start_server.py",
+    "serve": "python3 -m http.server 8000",
+    "serve:alt": "bash start_server.sh"
+  },
+  "keywords": [
+    "travel",
+    "tourism",
+    "india",
+    "spiritual-tours",
+    "honeymoon-packages",
+    "cultural-travel"
+  ],
+  "author": "Muhurta Yatra",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/muhurta-yatra.git"
+  },
+  "homepage": "https://muhurtayatra.com"
+}

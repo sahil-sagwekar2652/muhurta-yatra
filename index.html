@@ -1,188 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-		content="Discover amazing travel destinations with our curated travel packages. From Bali paradise to Japan cultural journeys, explore the world with our premium travel experiences.">
-	<meta name="keywords"
-		content="travel, destinations, vacation, Bali, Japan, Europe, Thailand, Iceland, Australia, adventure, cultural tours">
-	<meta name="author" content="Muhurta Yatra">
-	<meta name="robots" content="index, follow">
-	<meta property="og:title" content="Muhurta Yatra - जिथे प्रवास तिथे मुहूर्त">
-	<meta property="og:description"
-		content="Discover amazing travel destinations with our curated travel packages. From Bali paradise to Japan cultural journeys, explore the world with our premium travel experiences.">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://muhurtayatra.com">
-	<meta property="og:image" content="https://muhurtayatra.com/assets/images/bali-paradise.jpg">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Muhurta Yatra - जिथे प्रवास तिथे मुहूर्त">
-	<meta name="twitter:description" content="Discover amazing travel destinations with our curated travel packages.">
-	<title>Muhurta Yatra - जिथे प्रवास तिथे मुहूर्त</title>
-	<link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhurta Yatra - Experience authentic, culturally-rich travel journeys across India. Spiritual tours, honeymoon packages, and handcrafted travel experiences.">
+    <meta name="keywords" content="travel agency, India tours, spiritual tours, Maharashtra tours, honeymoon packages, cultural travel">
+    <title>Muhurta Yatra - Handcrafted Journeys Across India</title>
 
-	<!-- Structured Data (JSON-LD) -->
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "TravelAgency",
-		"name": "Muhurta Yatra",
-		"description": "जिथे प्रवास तिथे मुहूर्त - Discover amazing travel destinations with our curated travel packages. From Bali paradise to Japan cultural journeys, explore the world with our premium travel experiences.",
-		"url": "https://muhurtayatra.com",
-		"logo": "https://muhurtayatra.com/assets/images/logo.png",
-		"contactPoint": {
-			"@type": "ContactPoint",
-			"telephone": "+1-555-123-4567",
-			"contactType": "customer service",
-			"email": "info@muhurtayatra.com"
-		},
-		"address": {
-			"@type": "PostalAddress",
-			"addressCountry": "US"
-		},
-		"offers": [
-			{
-				"@type": "Offer",
-				"name": "Bali Paradise Adventure",
-				"description": "Experience the magical beauty of Bali with our 7-day adventure package. Visit ancient temples, explore lush rice terraces, relax on pristine beaches, and immerse yourself in the rich Balinese culture.",
-				"price": "1299",
-				"priceCurrency": "USD",
-				"availability": "https://schema.org/InStock",
-				"validFrom": "2024-01-01",
-				"validThrough": "2024-12-31",
-				"category": "Travel Package",
-				"image": "https://travelsite.com/assets/images/bali-paradise.jpg",
-				"offeredBy": {
-					"@type": "TravelAgency",
-					"name": "Muhurta Yatra"
-				}
-			}
-		]
-	}
-	</script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- Skip to main content link for screen readers -->
-	<a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2>मुहूर्त यात्रा</h2>
+                <p>Muhurta Yatra</p>
+            </div>
 
-	<header role="banner">
-		<nav role="navigation" aria-label="Main navigation">
-			<div class="nav-container">
-				<h1 class="logo">Muhurta Yatra</h1>
-				<ul class="nav-links" role="menubar">
-					<li role="none"><a href="index.html" role="menuitem" aria-current="page">Home</a></li>
-					<li role="none"><a href="#destinations" role="menuitem">Destinations</a></li>
-					<li role="none"><a href="#about" role="menuitem">About</a></li>
-					<li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item dropdown">
+                        <a href="#packages" class="nav__link">Tour Packages <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown__menu">
+                            <div class="dropdown__column">
+                                <h4>Spiritual Tours</h4>
+                                <a href="#spiritual">Indore, Ujjain, Mandu</a>
+                                <a href="#spiritual">Vrindavan</a>
+                                <a href="#spiritual">Dwaraka</a>
+                                <a href="#spiritual">Kedarnath</a>
+                                <a href="#spiritual">Haridwar, Rishikesh</a>
+                                <a href="#spiritual">Odisha, Puri, Jagannath</a>
+                                <a href="#spiritual">Rajasthan, Khatu Shyam</a>
+                                <a href="#spiritual">Varanasi, Ayodhya</a>
+                            </div>
+                            <div class="dropdown__column">
+                                <h4>Maharashtra Tours</h4>
+                                <a href="#maharashtra">3 Jyotirlinga</a>
+                                <a href="#maharashtra">Ashtavinayak</a>
+                                <a href="#maharashtra">Akkalkot - Pandharpur - Tuljapur</a>
+                                <a href="#maharashtra">Shirdi</a>
+                                <a href="#maharashtra">Saptashrungi</a>
+                                <a href="#maharashtra">Mahalakshmi</a>
+                                <h4 class="mt-3">Weekend Trips</h4>
+                                <a href="#weekend">Alibag</a>
+                                <a href="#weekend">Konkan</a>
+                                <a href="#weekend">Mahabaleshwar</a>
+                                <a href="#weekend">Aurangabad - Ajanta Ellora</a>
+                                <a href="#weekend">Agra - Mathura</a>
+                            </div>
+                            <div class="dropdown__column">
+                                <h4>3 Nights 4 Days</h4>
+                                <a href="#3n4d">Kerala - Munnar</a>
+                                <a href="#3n4d">Hampi - Badami</a>
+                                <a href="#3n4d">Gokarna, Karwar, Murudeshwar</a>
+                                <a href="#3n4d">Rishikesh</a>
+                                <h4 class="mt-3">Honeymoon Packages</h4>
+                                <a href="#honeymoon">Kashmir</a>
+                                <a href="#honeymoon">Kerala</a>
+                                <a href="#honeymoon">Shimla - Manali</a>
+                                <a href="#honeymoon">Coorg Ooty</a>
+                                <a href="#honeymoon">Nainital</a>
+                            </div>
+                            <div class="dropdown__column">
+                                <h4>Seasonal Tours</h4>
+                                <a href="#seasonal">Kashmir <span class="season-tag">Mar-Jun, Sep-Nov</span></a>
+                                <a href="#seasonal">Kerala <span class="season-tag">Jan-Mar, Aug-Dec</span></a>
+                                <a href="#seasonal">Himachal <span class="season-tag">Jan-Apr, Sep-Dec</span></a>
+                                <a href="#seasonal">Uttarakhand <span class="season-tag">Jan-Mar, Aug-Dec</span></a>
+                                <a href="#seasonal">Andaman <span class="season-tag">Jan-Mar, Sep-Dec</span></a>
+                                <a href="#seasonal">Rajasthan <span class="season-tag">Jan-Mar, Sep-Dec</span></a>
+                                <a href="#seasonal">Gujarat <span class="season-tag">All Year</span></a>
+                                <a href="#seasonal">Odisha <span class="season-tag">All Year</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
 
-	<main id="main-content" role="main">
-		<section id="hero">
-			<div class="hero-carousel">
-				<img src="assets/images/hero1.jpg" class="hero-slide active" alt="Travel destination 1">
-				<img src="assets/images/hero2.jpg" class="hero-slide" alt="Travel destination 2">
-				<img src="assets/images/hero3.jpg" class="hero-slide" alt="Travel destination 3">
-			</div>
-			<div class="hero-text">
-				<h1>Explore with Us</h1>
-				<p class="tagline">जिथे प्रवास तिथे मुहूर्त</p>
-				<p class="subtitle">Handcrafted journeys through culture, comfort & connection.</p>
-			</div>
-		</section>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-		<section id="carousel-section" class="destinations" aria-labelledby="destinations-title">
-			<div class="container">
-				<h2 id="destinations-title">Our Trips</h2>
-				<div class="carousel-container" role="region" aria-label="Travel destinations carousel">
-					<button class="carousel-btn prev-btn" aria-label="Previous destinations" tabindex="0" type="button">
-						<span aria-hidden="true">&#8249;</span>
-					</button>
-					<div class="carousel-wrapper">
-						<div class="products-carousel" id="products-container" role="list"
-							aria-label="Travel destination cards">
-							<!-- Products will be loaded here by JavaScript -->
-						</div>
-					</div>
-					<button class="carousel-btn next-btn" aria-label="Next destinations" tabindex="0" type="button">
-						<span aria-hidden="true">&#8250;</span>
-					</button>
-				</div>
-				<div class="carousel-indicators" id="carousel-indicators" role="tablist"
-					aria-label="Carousel navigation">
-					<!-- Indicators will be generated by JavaScript -->
-				</div>
-			</div>
-		</section>
-	</main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__carousel">
+            <div class="hero__slide active">
+                <div class="hero__overlay"></div>
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920&h=1080&fit=crop" alt="Taj Mahal India" class="hero__img">
+                <div class="hero__content container">
+                    <h1 class="hero__title">
+                        <span class="hero__title-hindi">यात्रा से यादें बनाएं</span>
+                        <span class="hero__title-main">Explore India with Us</span>
+                    </h1>
+                    <p class="hero__subtitle">Handcrafted journeys that blend tradition, culture, and unforgettable experiences</p>
+                    <div class="hero__buttons">
+                        <a href="#packages" class="btn btn-primary">Discover Trips</a>
+                        <a href="#contact" class="btn btn-secondary">Plan Your Journey</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide">
+                <div class="hero__overlay"></div>
+                <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1920&h=1080&fit=crop" alt="Kerala Backwaters" class="hero__img">
+                <div class="hero__content container">
+                    <h1 class="hero__title">
+                        <span class="hero__title-hindi">प्रकृति की गोद में</span>
+                        <span class="hero__title-main">Discover Serene Landscapes</span>
+                    </h1>
+                    <p class="hero__subtitle">From mountains to beaches, experience India's diverse beauty</p>
+                    <div class="hero__buttons">
+                        <a href="#packages" class="btn btn-primary">Discover Trips</a>
+                        <a href="#contact" class="btn btn-secondary">Plan Your Journey</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slide">
+                <div class="hero__overlay"></div>
+                <img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=1920&h=1080&fit=crop" alt="Spiritual India" class="hero__img">
+                <div class="hero__content container">
+                    <h1 class="hero__title">
+                        <span class="hero__title-hindi">आध्यात्मिक यात्राएं</span>
+                        <span class="hero__title-main">Spiritual Journeys Await</span>
+                    </h1>
+                    <p class="hero__subtitle">Connect with India's sacred heritage and ancient traditions</p>
+                    <div class="hero__buttons">
+                        <a href="#packages" class="btn btn-primary">Discover Trips</a>
+                        <a href="#contact" class="btn btn-secondary">Plan Your Journey</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hero__arrow hero__arrow--left" id="hero-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="hero__arrow hero__arrow--right" id="hero-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="hero__dots" id="hero-dots"></div>
+    </section>
 
-	<footer role="contentinfo">
-		<div class="container">
-			<div class="footer-content">
-				<div class="footer-section">
-					<h3>Contact Us</h3>
-					<div class="contact-info">
-						<p><span class="contact-icon">📞</span> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
-						<p><span class="contact-icon">📧</span> <a
-								href="mailto:info@muhurtayatra.com">info@muhurtayatra.com</a></p>
-						<p><span class="contact-icon">📍</span> 123 Travel Street, Adventure City, AC 12345</p>
-					</div>
-				</div>
+    <!-- Featured Packages Section -->
+    <section class="packages section" id="packages">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Popular Tour Packages</h2>
+                <p class="section__subtitle">Curated experiences for every traveler</p>
+            </div>
 
-				<div class="footer-section">
-					<h3>Follow Us</h3>
-					<div class="social-links">
-						<a href="https://instagram.com/travelsite" target="_blank" rel="noopener noreferrer"
-							aria-label="Follow us on Instagram">
-							<span class="social-icon">📷</span> Instagram
-						</a>
-						<a href="https://facebook.com/travelsite" target="_blank" rel="noopener noreferrer"
-							aria-label="Follow us on Facebook">
-							<span class="social-icon">📘</span> Facebook
-						</a>
-						<a href="https://twitter.com/travelsite" target="_blank" rel="noopener noreferrer"
-							aria-label="Follow us on Twitter">
-							<span class="social-icon">🐦</span> Twitter
-						</a>
-					</div>
-				</div>
+            <div class="packages__grid">
+                <div class="package__card" data-aos="fade-up">
+                    <div class="package__image">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800&h=600&fit=crop" alt="Spiritual Tour">
+                        <div class="package__badge">Popular</div>
+                    </div>
+                    <div class="package__content">
+                        <h3 class="package__title">Spiritual Tours</h3>
+                        <p class="package__description">Embark on a divine journey to India's most sacred temples and spiritual destinations</p>
+                        <ul class="package__highlights">
+                            <li><i class="fas fa-check"></i> Varanasi & Ayodhya</li>
+                            <li><i class="fas fa-check"></i> Kedarnath & Haridwar</li>
+                            <li><i class="fas fa-check"></i> Puri Jagannath</li>
+                        </ul>
+                        <a href="#spiritual" class="btn btn-outline">Explore More</a>
+                    </div>
+                </div>
 
-				<div class="footer-section">
-					<h3>Quick Links</h3>
-					<nav class="footer-nav">
-						<a href="#hero">Home</a>
-						<a href="#carousel-section">Our Trips</a>
-						<a href="product.html">Destinations</a>
-						<a href="#about">About</a>
-					</nav>
-				</div>
+                <div class="package__card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package__image">
+                        <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?w=800&h=600&fit=crop" alt="Kashmir">
+                        <div class="package__badge badge-honeymoon">Romantic</div>
+                    </div>
+                    <div class="package__content">
+                        <h3 class="package__title">Honeymoon Packages</h3>
+                        <p class="package__description">Create unforgettable memories in India's most romantic destinations</p>
+                        <ul class="package__highlights">
+                            <li><i class="fas fa-check"></i> Kashmir Paradise</li>
+                            <li><i class="fas fa-check"></i> Kerala Backwaters</li>
+                            <li><i class="fas fa-check"></i> Shimla-Manali Hills</li>
+                        </ul>
+                        <a href="#honeymoon" class="btn btn-outline">Explore More</a>
+                    </div>
+                </div>
 
-				<div class="footer-section">
-					<h3>Newsletter</h3>
-					<p>Subscribe for travel tips and exclusive offers</p>
-					<form class="newsletter-form" aria-label="Newsletter subscription">
-						<input type="email" placeholder="Your email address" required aria-label="Email address">
-						<button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
-					</form>
-				</div>
-			</div>
+                <div class="package__card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package__image">
+                        <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?w=800&h=600&fit=crop" alt="Maharashtra Tours">
+                        <div class="package__badge badge-cultural">Cultural</div>
+                    </div>
+                    <div class="package__content">
+                        <h3 class="package__title">Maharashtra Tours</h3>
+                        <p class="package__description">Explore the spiritual and cultural heartland of Maharashtra</p>
+                        <ul class="package__highlights">
+                            <li><i class="fas fa-check"></i> Ashtavinayak Darshan</li>
+                            <li><i class="fas fa-check"></i> 3 Jyotirlinga Tour</li>
+                            <li><i class="fas fa-check"></i> Shirdi-Pandharpur</li>
+                        </ul>
+                        <a href="#maharashtra" class="btn btn-outline">Explore More</a>
+                    </div>
+                </div>
 
-			<div class="footer-bottom">
-				<p>&copy; 2024 Muhurta Yatra. All rights reserved.</p>
-				<div class="footer-links">
-					<a href="#privacy">Privacy Policy</a>
-					<a href="#terms">Terms of Service</a>
-					<a href="#cookies">Cookie Policy</a>
-				</div>
-			</div>
-		</div>
-	</footer>
+                <div class="package__card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package__image">
+                        <img src="https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=800&h=600&fit=crop" alt="Weekend Getaway">
+                        <div class="package__badge badge-weekend">Quick Escape</div>
+                    </div>
+                    <div class="package__content">
+                        <h3 class="package__title">Weekend Trips</h3>
+                        <p class="package__description">Perfect short getaways to rejuvenate and explore nearby destinations</p>
+                        <ul class="package__highlights">
+                            <li><i class="fas fa-check"></i> Konkan Beaches</li>
+                            <li><i class="fas fa-check"></i> Mahabaleshwar Hills</li>
+                            <li><i class="fas fa-check"></i> Ajanta-Ellora Caves</li>
+                        </ul>
+                        <a href="#weekend" class="btn btn-outline">Explore More</a>
+                    </div>
+                </div>
 
-	<script src="assets/js/main.js"></script>
+                <div class="package__card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package__image">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&h=600&fit=crop" alt="Kerala Munnar">
+                        <div class="package__badge badge-extended">3N/4D</div>
+                    </div>
+                    <div class="package__content">
+                        <h3 class="package__title">3 Nights 4 Days Trips</h3>
+                        <p class="package__description">Extended getaways to immerse in nature and culture</p>
+                        <ul class="package__highlights">
+                            <li><i class="fas fa-check"></i> Kerala-Munnar</li>
+                            <li><i class="fas fa-check"></i> Hampi-Badami Heritage</li>
+                            <li><i class="fas fa-check"></i> Gokarna Beach Trail</li>
+                        </ul>
+                        <a href="#3n4d" class="btn btn-outline">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="package__card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="package__image">
+                        <img src="https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800&h=600&fit=crop" alt="Seasonal Tours">
+                        <div class="package__badge badge-seasonal">Seasonal</div>
+                    </div>
+                    <div class="package__content">
+                        <h3 class="package__title">Seasonal Tours</h3>
+                        <p class="package__description">Experience destinations at their most beautiful time of the year</p>
+                        <ul class="package__highlights">
+                            <li><i class="fas fa-check"></i> Kashmir Spring/Autumn</li>
+                            <li><i class="fas fa-check"></i> Himachal Snow Tours</li>
+                            <li><i class="fas fa-check"></i> Andaman Islands</li>
+                        </ul>
+                        <a href="#seasonal" class="btn btn-outline">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image" data-aos="fade-right">
+                    <div class="about__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&h=600&fit=crop" alt="Founder - Travel Expert">
+                        <div class="about__pattern"></div>
+                    </div>
+                </div>
+                <div class="about__content" data-aos="fade-left">
+                    <h2 class="section__title">About Muhurta Yatra</h2>
+                    <div class="about__quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Every tourist has a dream. My job is to make that dream comfortable, safe and memorable."</p>
+                    </div>
+
+                    <p class="about__text">
+                        Tourism is not just a business - it's a responsibility. As a service provider, I feel happier than my guests when they enjoy their holiday.
+                    </p>
+
+                    <p class="about__text">
+                        We all want clean hotels, good food, a dependable car and a guide who actually supports us throughout the journey. And at Muhurta Yatra, we ensure exactly that - before, during and after your trip.
+                    </p>
+
+                    <p class="about__text highlight">
+                        Your trust is our priority—that's why we offer secure booking, 24/7 customer support, and comprehensive travel protection.
+                    </p>
+
+                    <div class="about__credentials">
+                        <h3>Professional Certifications</h3>
+                        <div class="credentials__grid">
+                            <div class="credential__item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Diploma in International Tourism</span>
+                            </div>
+                            <div class="credential__item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Domestic & International Destinations</span>
+                            </div>
+                            <div class="credential__item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certified Tour Manager</span>
+                            </div>
+                            <div class="credential__item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Airline Ticketing Specialist</span>
+                            </div>
+                            <div class="credential__item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Europe Destinations Expert</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__experience">
+                        <p><strong>Experience:</strong> Travel Operations Executive, Tour Consultant & Avid Trekker</p>
+                    </div>
+
+                    <div class="about__blog">
+                        <a href="https://yatrawithprajakta.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fas fa-blog"></i> Visit My Travel Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Our Services</h2>
+                <p class="section__subtitle">Everything you need for a perfect journey</p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service__card" data-aos="zoom-in">
+                    <div class="service__icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service__title">24/7 Virtual Tour Guide</h3>
+                    <p class="service__description">Round-the-clock support and guidance throughout your journey, ensuring you never feel alone</p>
+                </div>
+
+                <div class="service__card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service__icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="service__title">Local Cuisine Experience</h3>
+                    <p class="service__description">Savor authentic regional flavors and culinary traditions at carefully selected local eateries</p>
+                </div>
+
+                <div class="service__card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service__icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3 class="service__title">Best Hotel Stays</h3>
+                    <p class="service__description">Comfortable, clean accommodations that meet our high standards for your comfort and safety</p>
+                </div>
+
+                <div class="service__card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service__icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="service__title">Trusted Transportation</h3>
+                    <p class="service__description">Reliable, safe vehicles with experienced drivers for seamless travel throughout your trip</p>
+                </div>
+
+                <div class="service__card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service__icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="service__title">Pre-Tour Guidance Meeting</h3>
+                    <p class="service__description">Comprehensive briefing before your trip to ensure you're well-prepared and confident</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust section">
+        <div class="container">
+            <div class="trust__grid">
+                <div class="trust__item" data-aos="fade-up">
+                    <div class="trust__icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="trust__number">100%</h3>
+                    <p class="trust__label">Secure Booking</p>
+                </div>
+                <div class="trust__item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="trust__number">500+</h3>
+                    <p class="trust__label">Happy Travelers</p>
+                </div>
+                <div class="trust__item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust__icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="trust__number">50+</h3>
+                    <p class="trust__label">Destinations Covered</p>
+                </div>
+                <div class="trust__item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="trust__number">4.8/5</h3>
+                    <p class="trust__label">Customer Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Get In Touch</h2>
+                <p class="section__subtitle">Let's plan your perfect journey together</p>
+            </div>
+
+            <div class="contact__grid">
+                <div class="contact__info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <p class="contact__text">Ready to embark on your next adventure? Reach out to us and we'll create a personalized itinerary just for you.</p>
+
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:muhurtayatra@gmail.com">muhurtayatra@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919326610388">+91 93266 10388</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4>Instagram</h4>
+                                <a href="https://instagram.com/muhurtayatra" target="_blank" rel="noopener noreferrer">@muhurtayatra</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <a href="https://instagram.com/muhurtayatra" target="_blank" rel="noopener noreferrer" class="social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:muhurtayatra@gmail.com" class="social__link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919326610388" class="social__link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact__form-container" data-aos="fade-left">
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Your Name" required>
+                            <i class="fas fa-user form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Your Email" required>
+                            <i class="fas fa-envelope form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" class="form__input" placeholder="Your Phone">
+                            <i class="fas fa-phone form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <select class="form__input form__select">
+                                <option value="">Select Tour Type</option>
+                                <option value="spiritual">Spiritual Tours</option>
+                                <option value="maharashtra">Maharashtra Tours</option>
+                                <option value="weekend">Weekend Trips</option>
+                                <option value="3n4d">3 Nights 4 Days</option>
+                                <option value="honeymoon">Honeymoon Packages</option>
+                                <option value="seasonal">Seasonal Tours</option>
+                            </select>
+                            <i class="fas fa-map-marked-alt form__icon"></i>
+                        </div>
+                        <div class="form__group">
+                            <textarea class="form__input form__textarea" placeholder="Your Message" rows="5" required></textarea>
+                            <i class="fas fa-comment-dots form__icon"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <div class="footer__logo">
+                        <h3>मुहूर्त यात्रा</h3>
+                        <p>Muhurta Yatra</p>
+                    </div>
+                    <p class="footer__description">
+                        Creating memorable journeys across India with authenticity, care, and cultural richness.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://instagram.com/muhurtayatra" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:muhurtayatra@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://yatrawithprajakta.blogspot.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-blog"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Tour Packages</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Popular Tours</h4>
+                    <ul class="footer__links">
+                        <li><a href="#spiritual">Spiritual Tours</a></li>
+                        <li><a href="#maharashtra">Maharashtra Tours</a></li>
+                        <li><a href="#honeymoon">Honeymoon Packages</a></li>
+                        <li><a href="#weekend">Weekend Trips</a></li>
+                        <li><a href="#seasonal">Seasonal Tours</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:muhurtayatra@gmail.com">muhurtayatra@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+919326610388">+91 93266 10388</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://instagram.com/muhurtayatra" target="_blank" rel="noopener noreferrer">@muhurtayatra</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 Muhurta Yatra. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
